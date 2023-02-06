@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Rubik Cube</title>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div id="scene"></div>
+
+  <script src="libs/jquery-2.0.3.js"></script>
+  <script src="libs/three.js"></script>
+  <script src="libs/OrbitControls.js"></script>
+  <script src='libs/threex.domevent.js'></script>
+  <script src='libs/threex.domevent.object3d.js'></script>
+
+  <script src="rubik.js"></script>
+  <script>
+
+    $(function() {
+      function init(dimensions=3) {
+  
+
+        var element = $("#scene").empty();
+        var rubik = new Rubik(element, dimensions);
+      };
+
+      init();
+
+      
+    });
+
+  </script>
+
+</body>
+
+</html>
