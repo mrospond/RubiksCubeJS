@@ -1,1 +1,1 @@
-# rubiks-3js
+# RubiksCubeJS
