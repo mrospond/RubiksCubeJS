@@ -19,16 +19,13 @@
   <script src="libs/OrbitControls.js"></script>
   <script src='libs/threex.domevent.js'></script>
   <script src='libs/threex.domevent.object3d.js'></script>
-
-  <script src="rubik.js"></script>
+  <script src="rubiksCubeThree.js"></script>
   <script>
 
     $(function() {
-      function init(dimensions=3) {
-  
-
+      function init() {
         var element = $("#scene").empty();
-        var rubik = new Rubik(element, dimensions);
+        var rubik = new Rubik(element);
       };
 
       init();
